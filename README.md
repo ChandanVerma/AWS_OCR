@@ -4,10 +4,10 @@
 Create a `.env` file in the same folder as `app.py` and add the following content:
 
 ```
-aws_access_key_id = 'your access key' \n
-aws_secret_access_key = 'your secret' \n
-region_name='your region' \n
-BEDROCK_MODEL = "anthropic.claude-3-sonnet-20240229-v1:0" \n
+aws_access_key_id = 'your access key'
+aws_secret_access_key = 'your secret'
+region_name='your region'
+BEDROCK_MODEL = "anthropic.claude-3-sonnet-20240229-v1:0"
 EMBEDDING_MODEL = "amazon.titan-embed-image-v1" 
 ```
 
