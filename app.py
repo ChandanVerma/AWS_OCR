@@ -12,7 +12,8 @@ from langchain_community.document_loaders import AmazonTextractPDFLoader
 from langchain.prompts import PromptTemplate
 import boto3
 from langchain_aws import ChatBedrock
-
+from dotenv import load_dotenv
+load_dotenv()
 # Configuring Boto3
 retry_config = Config(
     region_name=os.environ.get("region_name"),
