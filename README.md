@@ -10,15 +10,28 @@ region_name='your region'
 BEDROCK_MODEL = "anthropic.claude-3-sonnet-20240229-v1:0"
 EMBEDDING_MODEL = "amazon.titan-embed-image-v1" 
 ```
+## Step 2: Create Conda environment
+Run the following command to create conda environment:
 
-## Step 2: Install Dependencies
+```bash
+conda create -n aws_ocr python==3.10 -y
+```
+
+## Step 3: Activate Conda environment
+Run the following command to create conda environment:
+
+```bash
+conda activate aws_ocr
+```
+
+## Step 4: Install Dependencies
 Run the following command to install the required dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Step 3: Run the Streamlit App
+## Step 5: Run the Streamlit App
 Start the Streamlit app with the following command:
 
 ```
