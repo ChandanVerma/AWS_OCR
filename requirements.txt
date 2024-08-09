@@ -1,5 +1,8 @@
+amazon-textract-caller==0.2.4
+amazon-textract-textractor==1.8.2
 boto3==1.34.149
 botocore==1.34.149
+faiss-cpu
 langchain==0.2.12
 langchain_aws==0.1.16
 langchain_community==0.2.11
