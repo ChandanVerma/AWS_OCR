@@ -18,7 +18,7 @@ conda create -n aws_ocr python==3.10 -y
 ```
 
 ## Step 3: Activate Conda environment
-Run the following command to create conda environment:
+Run the following command to activate conda environment:
 
 ```bash
 conda activate aws_ocr
