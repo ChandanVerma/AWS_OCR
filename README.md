@@ -37,3 +37,15 @@ Start the Streamlit app with the following command:
 ```
 streamlit run app.py
 ```
+
+## FOR DOCKER LAMBDA
+```
+aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 519183793155.dkr.ecr.ap-south-1.amazonaws.com
+
+docker build --platform linux/amd64 -t aws-ocr-lambda-image:latest .
+
+docker tag aws-ocr-lambda-image:latest 519183793155.dkr.ecr.ap-south-1.amazonaws.com/aws-ocr-lambda-image:latest
+
+docker push 519183793155.dkr.ecr.ap-south-1.amazonaws.com/aws-ocr-lambda-image:
+```
+

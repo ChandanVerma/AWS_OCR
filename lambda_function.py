@@ -1,15 +1,11 @@
 import boto3
-import bs4
 from langchain import hub
-from langchain_community.document_loaders import S3FileLoader, AmazonTextractPDFLoader
+from langchain_community.document_loaders import AmazonTextractPDFLoader
 from langchain_community.vectorstores import Chroma
 from langchain_core.output_parsers import StrOutputParser
-from langchain_community.embeddings import BedrockEmbeddings
 from langchain_core.runnables import RunnablePassthrough
-from langchain_community.embeddings import OpenAIEmbeddings
-from langchain_community.chat_models import ChatOpenAI
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_aws import ChatBedrock
+from langchain_aws import ChatBedrock, BedrockEmbeddings
 from botocore.config import Config
 import os
 

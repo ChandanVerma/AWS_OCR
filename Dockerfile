@@ -1,8 +1,8 @@
-# Use the AWS base image for Python 3.12
-FROM public.ecr.aws/lambda/python:3.10
+# Use the AWS base image for Python 3.10
+FROM public.ecr.aws/lambda/python:3.12
 
 # Install build-essential to get the C++ compiler and other necessary tools
-RUN apt-get update && apt-get install -y g++ make
+RUN microdnf update && microdnf install -y g++ make
 
 # Copy requirements.txt
 COPY requirements.txt ${LAMBDA_TASK_ROOT}
